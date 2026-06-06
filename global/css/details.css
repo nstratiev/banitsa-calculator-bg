@@ -9,6 +9,22 @@ details {
   margin-left: 20px;
 }
 
+@media (max-width: 350px) {
+  article.details {
+    display: flex;
+    justify-content: center;
+  }
+
+  details {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .top-nav {
+    justify-content: center;
+  }
+}
+
 summary {
   padding: 4px;
   outline: 1px solid black;
