@@ -28,16 +28,13 @@ summary:hover {
   /* margin-bottom: 10px; */
 }
 
-.details-bottom > #legend {
-  margin-bottom: 40px;
+.details-bottom > #legend,
+.details-bottom > hr {
+  margin-bottom: 60px;
 }
 
 .details-bottom:open > #legend {
   margin-bottom: 0px;
-}
-
-.details-bottom > hr {
-  margin-bottom: 60px;
 }
 
 .details-body {
