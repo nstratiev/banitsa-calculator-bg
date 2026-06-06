@@ -1,8 +1,12 @@
 /* ##### Details dropdown [Start] ##### */
+article.details {
+  width: 100%;
+}
+
 details {
+  /* border: 2px solid green; */
   text-align: initial;
-  margin: 10px 10px 0px 20px;
-  align-self: flex-start;
+  margin-left: 20px;
 }
 
 summary {
@@ -17,6 +21,11 @@ summary {
 
 summary:hover {
   outline-width: 2px;
+}
+
+.details-top {
+  margin-top: 16px;
+  /* margin-bottom: 10px; */
 }
 
 .details-bottom > #legend {

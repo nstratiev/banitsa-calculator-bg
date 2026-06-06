@@ -24,40 +24,43 @@
     <h2>(калкулатор)</h2>
   </header>
 
-  <details class="details-top">
-    <summary>Пояснения: ...</summary>
-    <div class="details-body -top">
-      <p>
-        Задачата на калкулатора е да изчисли необходимите съставки за замесването на тесто (за кори за баница), по
-        зададени от нас:
-      </p>
+  <article class="details">
+    <details class="details-top">
+      <summary>Пояснения: ...</summary>
+      <div class="details-body -top">
+        <p>
+          Задачата на калкулатора е да изчисли необходимите съставки за замесването на тесто (за кори за баница), по
+          зададени от нас:
+        </p>
 
-      <ol>
-        <li>
-          Тегло на тестото, което желаем да получим;
-        </li>
-        <li>
-          Формула на тестото;<br>
-          * Основната съставка е съдържащото се в тестото брашно. Всички останали съставки се изразяват като
-          процент от него;
-        </li>
-      </ol>
+        <ol>
+          <li>
+            Тегло на тестото, което желаем да получим;
+          </li>
+          <li>
+            Формула на тестото;<br>
+            * Основната съставка е съдържащото се в тестото брашно. Всички останали съставки се изразяват като
+            процент от него;
+          </li>
+        </ol>
 
-      <div class="said-in-different-way">... Kазано по друг начин ...
+        <div class="said-in-different-way">... Kазано по друг начин ...
+        </div>
+        <div>
+          <P class="used-when">Използваме, когато:</P>
+          <p>Имаме конкретна хлебна формула (формула на тестото) и дадено количество тесто, което желаем да получим.;
+          </p>
+          <p class="and-txt">и</p>
+          <p>Искаме да изчислим количествата на съставките, които е необходимо да използваме при замесването.;</p>
+
+        </div>
+
       </div>
-      <div>
-        <P class="used-when">Използваме, когато:</P>
-        <p>Имаме конкретна хлебна формула (формула на тестото) и дадено количество тесто, което желаем да получим.;</p>
-        <p class="and-txt">и</p>
-        <p>Искаме да изчислим количествата на съставките, които е необходимо да използваме при замесването.;</p>
 
-      </div>
+      <hr>
 
-    </div>
-
-    <hr>
-
-  </details>
+    </details>
+  </article>
 
   <nav class="top-nav">
     <a href="../" id="link-menu" class="top-nav link-legend btn-menu" title="Меню">М</a>
@@ -305,215 +308,217 @@
 
   </main>
 
+  <article class="details">
+    <details class="details-bottom">
+      <summary id="legend">Легенда: ...</summary>
+      <div class="details-body -bottom">
 
-  <details class="details-bottom">
-    <summary id="legend">Легенда: ...</summary>
-    <div class="details-body -bottom">
-
-      <!-- Версия -->
-      <div class="-version">
-        <p id="version-legend"></p>
-      </div>
-
-      <!-- Понятия -->
-      <h5 class="-legend">Понятия</h5>
-
-      <div class="legend-grid -text">
-        <p>
-          <span class="bold">h<span class="superscript">тесто</span></span>
-          <span class="text-bullet"></span>Хидратация на тестото. Показва
-          съдържанието на течности в тестото,
-          изразено
-          като
-          процент от съдържащото се в тестото брашно;
-        </p>
-      </div>
-
-      <!-- Стойности -->
-      <h5 class="-legend">Стойности</h5>
-
-      <div class="legend-grid -text">
-        <p>
-          <span class="bold">h<span class="superscript">тесто</span></span> <span class="text-bullet"></span>Обичайно,
-          баничното тесто е
-          сравнително
-          твърд
-          тип тесто.<br>
-          Неговата хидратация варира в диапазона на 50 - 60%. ;
-        </p>
-
-        <p>
-          <span class="bold">Сол, (%)</span><span class="text-bullet"></span>При замесването на хляб, обикновено,
-          теглото на солта е 2% (или
-          около
-          2%)
-          от
-          теглото на брашното.<br>
-          При тестото за баница, обикновено, този процент е завишен и варира в диапазона на 2 - 3%. ;
-        </p>
-      </div>
-
-      <!-- Полета -->
-      <h5 class="-legend">Полета</h5>
-
-      <div class="legend-grid -fields">
-
-        <!-- Row -->
-        <p class="-legend-grid-full-row -grid-item">
-          *Десетичният знак се изписва с „точка” или „запетая”;<br>
-          (в зависимост от регионалните настройки на операционната
-          система)
-        </p>
-
-        <!-- Row -->
-        <p class="legend-cell-sample -input -legend-grid-item -a">[ число ]</p>
-        <p class="-legend-grid-item -b">
-          Поле за свободно въвеждане на стойност;
-          <!-- Променлива стойност. / Стойност, подлежаща на промяна, която задаваме свободно; -->
-        </p>
-
-        <!-- Row -->
-        <p class="legend-cell-sample -input -placeholder -legend-grid-item -a">пр. [число]</p>
-        <p class="-legend-grid-item -b">
-          Примерна стойност;
-        </p>
-
-        <!-- Row -->
-        <p class="legend-cell-sample -result -legend-grid-item -a">[ число ]</p>
-        <p class="-legend-grid-item -b">
-          Поле със стойност, която търсим (изчислена на базата на въведените от нас стойности);
-          <!-- Стойността, която търсим (изчислена на базата на зададените от нас стойности); -->
-        </p>
-
-        <!-- Row -->
-        <p class="legend-cell-sample comment -legend-grid-item -a">[ текст ]</p>
-        <p class="-legend-grid-item -b">
-          Поле с пояснение (при посочване на полето). Пояснението се появява горе-вляво.;
-        </p>
-
-        <!-- Row -->
-        <p class="legend-cell-sample comment -comment-green -legend-grid-item -a">[ текст ]</p>
-        <p class="-legend-grid-item -b">
-          Поле с пояснение (при посочване на полето). Пояснението се появява горе-вляво. / Незадължително поле;
-        </p>
-
-      </div>
-
-
-      <!-- Бутони -->
-      <h5 class="-legend">Бутони</h5>
-
-      <div class="legend-grid -btns">
-
-        <!-- Row -->
-        <!-- Predefined values button sample -->
-        <p class="-legend-grid-item -a">
-          <button id="btn-predefined-sample" class="top-nav btn-predefined-values" tabindex="-1">П</button>
-        </p>
-        <p class="-legend-grid-item -b">
-          Попълване на полетата за свободно въвеждане с примерни стойности;
-        </p>
-
-        <!-- Row -->
-        <!-- Submit button sample -->
-        <p class="-legend-grid-item -a">
-          <button id="btn-submit-sample" class="btn-submit" tabindex="-1">
-            <svg>
-              <use href="#svg-form-calculate"></use>
-            </svg>
-          </button>
-        </p>
-        <p class="-legend-grid-item -b">
-          Изчисляване на търсените стойности;
-        </p>
-
-        <!-- Row -->
-        <!-- Reset button sample -->
-        <p class="-legend-grid-item -a">
-          <button id="btn-reset-sample" class="btn-reset" tabindex="-1">
-            <svg>
-              <use href="#svg-form-refresh"></use>
-            </svg>
-          </button>
-        </p>
-        <p class="-legend-grid-item -b">
-          Нулиране на полетата от текущата форма;
-        </p>
-
-        <!-- Row -->
-        <!-- Save button sample -->
-        <p class="-legend-grid-item -a">
-          <button id="btn-save-sample" class="btn-save" tabindex="-1">
-            <svg>
-              <use href="#svg-form-save"></use>
-            </svg>
-          </button>
-        </p>
-        <p class="-legend-grid-item -b">
-          Запаметяване на стойностите от полетата на текущата форма;
-        </p>
-
-        <!-- Row -->
-        <!-- Global Reset Button sample -->
-        <div class="-legend-grid-item -a">
-          <button type="button" class="btn-reset-global btn -global" tabindex="-1">
-            <svg>
-              <use href="#svg-global-reset"></use>
-            </svg>
-          </button>
+        <!-- Версия -->
+        <div class="-version">
+          <p id="version-legend"></p>
         </div>
-        <p class="-legend-grid-item -b">
-          Нулиране на всички полета и освобождаване на паметта, свързана с текущата страница;
-        </p>
 
-        <!-- Row -->
-        <!-- Global Save Button sample -->
-        <div class="-legend-grid-item -a">
-          <button type="button" class="btn-save-global btn -global" tabindex="-1">
-            <svg>
-              <use href="#svg-global-save"></use>
-            </svg>
-          </button>
+        <!-- Понятия -->
+        <h5 class="-legend">Понятия</h5>
+
+        <div class="legend-grid -text">
+          <p>
+            <span class="bold">h<span class="superscript">тесто</span></span>
+            <span class="text-bullet"></span>Хидратация на тестото. Показва
+            съдържанието на течности в тестото,
+            изразено
+            като
+            процент от съдържащото се в тестото брашно;
+          </p>
         </div>
-        <p class="-legend-grid-item -b">
-          Запаметяване на стойностите от всички полета на текущата страница;
-        </p>
+
+        <!-- Стойности -->
+        <h5 class="-legend">Стойности</h5>
+
+        <div class="legend-grid -text">
+          <p>
+            <span class="bold">h<span class="superscript">тесто</span></span> <span class="text-bullet"></span>Обичайно,
+            баничното тесто е
+            сравнително
+            твърд
+            тип тесто.<br>
+            Неговата хидратация варира в диапазона на 50 - 60%. ;
+          </p>
+
+          <p>
+            <span class="bold">Сол, (%)</span><span class="text-bullet"></span>При замесването на хляб, обикновено,
+            теглото на солта е 2% (или
+            около
+            2%)
+            от
+            теглото на брашното.<br>
+            При тестото за баница, обикновено, този процент е завишен и варира в диапазона на 2 - 3%. ;
+          </p>
+        </div>
+
+        <!-- Полета -->
+        <h5 class="-legend">Полета</h5>
+
+        <div class="legend-grid -fields">
+
+          <!-- Row -->
+          <p class="-legend-grid-full-row -grid-item">
+            *Десетичният знак се изписва с „точка” или „запетая”;<br>
+            (в зависимост от регионалните настройки на операционната
+            система)
+          </p>
+
+          <!-- Row -->
+          <p class="legend-cell-sample -input -legend-grid-item -a">[ число ]</p>
+          <p class="-legend-grid-item -b">
+            Поле за свободно въвеждане на стойност;
+            <!-- Променлива стойност. / Стойност, подлежаща на промяна, която задаваме свободно; -->
+          </p>
+
+          <!-- Row -->
+          <p class="legend-cell-sample -input -placeholder -legend-grid-item -a">пр. [число]</p>
+          <p class="-legend-grid-item -b">
+            Примерна стойност;
+          </p>
+
+          <!-- Row -->
+          <p class="legend-cell-sample -result -legend-grid-item -a">[ число ]</p>
+          <p class="-legend-grid-item -b">
+            Поле със стойност, която търсим (изчислена на базата на въведените от нас стойности);
+            <!-- Стойността, която търсим (изчислена на базата на зададените от нас стойности); -->
+          </p>
+
+          <!-- Row -->
+          <p class="legend-cell-sample comment -legend-grid-item -a">[ текст ]</p>
+          <p class="-legend-grid-item -b">
+            Поле с пояснение (при посочване на полето). Пояснението се появява горе-вляво.;
+          </p>
+
+          <!-- Row -->
+          <p class="legend-cell-sample comment -comment-green -legend-grid-item -a">[ текст ]</p>
+          <p class="-legend-grid-item -b">
+            Поле с пояснение (при посочване на полето). Пояснението се появява горе-вляво. / Незадължително поле;
+          </p>
+
+        </div>
+
+
+        <!-- Бутони -->
+        <h5 class="-legend">Бутони</h5>
+
+        <div class="legend-grid -btns">
+
+          <!-- Row -->
+          <!-- Predefined values button sample -->
+          <p class="-legend-grid-item -a">
+            <button id="btn-predefined-sample" class="top-nav btn-predefined-values" tabindex="-1">П</button>
+          </p>
+          <p class="-legend-grid-item -b">
+            Попълване на полетата за свободно въвеждане с примерни стойности;
+          </p>
+
+          <!-- Row -->
+          <!-- Submit button sample -->
+          <p class="-legend-grid-item -a">
+            <button id="btn-submit-sample" class="btn-submit" tabindex="-1">
+              <svg>
+                <use href="#svg-form-calculate"></use>
+              </svg>
+            </button>
+          </p>
+          <p class="-legend-grid-item -b">
+            Изчисляване на търсените стойности;
+          </p>
+
+          <!-- Row -->
+          <!-- Reset button sample -->
+          <p class="-legend-grid-item -a">
+            <button id="btn-reset-sample" class="btn-reset" tabindex="-1">
+              <svg>
+                <use href="#svg-form-refresh"></use>
+              </svg>
+            </button>
+          </p>
+          <p class="-legend-grid-item -b">
+            Нулиране на полетата от текущата форма;
+          </p>
+
+          <!-- Row -->
+          <!-- Save button sample -->
+          <p class="-legend-grid-item -a">
+            <button id="btn-save-sample" class="btn-save" tabindex="-1">
+              <svg>
+                <use href="#svg-form-save"></use>
+              </svg>
+            </button>
+          </p>
+          <p class="-legend-grid-item -b">
+            Запаметяване на стойностите от полетата на текущата форма;
+          </p>
+
+          <!-- Row -->
+          <!-- Global Reset Button sample -->
+          <div class="-legend-grid-item -a">
+            <button type="button" class="btn-reset-global btn -global" tabindex="-1">
+              <svg>
+                <use href="#svg-global-reset"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="-legend-grid-item -b">
+            Нулиране на всички полета и освобождаване на паметта, свързана с текущата страница;
+          </p>
+
+          <!-- Row -->
+          <!-- Global Save Button sample -->
+          <div class="-legend-grid-item -a">
+            <button type="button" class="btn-save-global btn -global" tabindex="-1">
+              <svg>
+                <use href="#svg-global-save"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="-legend-grid-item -b">
+            Запаметяване на стойностите от всички полета на текущата страница;
+          </p>
+
+        </div>
+
+        <!-- Навигация в страницата -->
+        <h5 class="-legend">Клавиатура (команди)</h5>
+
+        <div class="legend-grid -text">
+          <p>
+            При работа на настолен или преносим компютър би могло да се използва клавиатурата:
+          </p>
+
+          <p>
+            <code>[Tab]</code><br>
+            <span class="text-bullet"></span>Преминаване от един интерактивен елемент към друг;<br>
+            * Интерактивни елементи (елементи, податливи на взаимодействие с потребителя): полета за свободно въвеждане
+            /
+            бутони / хипервръзки ... ;
+          </p>
+
+          <p>
+            <code>[Shift] + [Tab]</code><br>
+            <span class="text-bullet"></span>Връщане към предходен интерактивен елемент;
+          </p>
+
+          <p>
+            <code>[Enter]</code><br>
+            <span class="text-bullet"></span>Моментално изчисляване (когато някое поле за въвеждане е на фокус);<br>
+            <span class="text-bullet"></span>Активиране на действието на даден бутон или хипервръзка;
+          </p>
+
+        </div>
 
       </div>
 
-      <!-- Навигация в страницата -->
-      <h5 class="-legend">Клавиатура (команди)</h5>
+      <hr>
 
-      <div class="legend-grid -text">
-        <p>
-          При работа на настолен или преносим компютър би могло да се използва клавиатурата:
-        </p>
-
-        <p>
-          <code>[Tab]</code><br>
-          <span class="text-bullet"></span>Преминаване от един интерактивен елемент към друг;<br>
-          * Интерактивни елементи (елементи, податливи на взаимодействие с потребителя): полета за свободно въвеждане /
-          бутони / хипервръзки ... ;
-        </p>
-
-        <p>
-          <code>[Shift] + [Tab]</code><br>
-          <span class="text-bullet"></span>Връщане към предходен интерактивен елемент;
-        </p>
-
-        <p>
-          <code>[Enter]</code><br>
-          <span class="text-bullet"></span>Моментално изчисляване (когато някое поле за въвеждане е на фокус);<br>
-          <span class="text-bullet"></span>Активиране на действието на даден бутон или хипервръзка;
-        </p>
-
-      </div>
-
-    </div>
-
-    <hr>
-
-  </details>
+    </details>
+  </article>
 
   <footer class="-page">
     <ul>
