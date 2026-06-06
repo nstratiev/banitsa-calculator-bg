@@ -183,7 +183,9 @@ div.version {
   font-weight: bold;
   font-style: italic;
   /* padding: 2px 8px 0; */
-  padding: 2px 8px 2px 0;
+  /* padding: 2px 8px 2px 0; */
+  padding: 2px;
+  margin-right: 10px;
 
   /* padding: 2px 8px;
   border-left: 1px solid rgb(192, 0, 0);
