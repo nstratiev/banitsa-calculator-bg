@@ -19,6 +19,18 @@ summary:hover {
   outline-width: 2px;
 }
 
+.details-bottom > #legend {
+  margin-bottom: 40px;
+}
+
+.details-bottom:open > #legend {
+  margin-bottom: 0px;
+}
+
+.details-bottom > hr {
+  margin-bottom: 60px;
+}
+
 .details-body {
   padding: 2px;
 }

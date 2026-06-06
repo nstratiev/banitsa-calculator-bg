@@ -135,8 +135,8 @@ header.-page {
 }
 
 footer.-page {
-  /* margin-top: auto; */
-  margin-top: 40px;
+  margin-top: auto;
+  /* margin-top: 40px; */
   text-align: initial;
   padding: 8px 8px 8px 20px;
   text-align: center;
@@ -180,7 +180,9 @@ div.version {
   font-size: 85%;
   font-weight: bold;
   font-style: italic;
-  padding: 2px 8px 0;
+  /* padding: 2px 8px 0; */
+  padding: 2px 8px 2px 0;
+
   /* padding: 2px 8px;
   border-left: 1px solid rgb(192, 0, 0);
   border-bottom: 1px solid rgb(192, 0, 0);
