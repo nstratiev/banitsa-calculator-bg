@@ -47,4 +47,9 @@ article.card > header {
   border: 1px solid black;
 }
 
+.cell.-line.-border-top-none,
+.cell.-line.-text {
+  border-top: none;
+}
+
 /* ##### Borders [End] ##### */
