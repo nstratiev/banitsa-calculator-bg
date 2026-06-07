@@ -35,8 +35,16 @@ summary {
   width: 210px;
 }
 
-summary:hover {
-  outline-width: 2px;
+summary:focus {
+  outline: none;
+  box-shadow: 0 0 4px 4px gray;
+}
+
+@media (hover: hover) {
+  summary:hover {
+    outline-width: 2px;
+  }
+
 }
 
 .details-top {

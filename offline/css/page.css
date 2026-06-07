@@ -53,9 +53,15 @@ footer ul li {
   color: #366092;
 }
 
-.page-footer-link:hover,
 .page-footer-link:active {
   font-weight: bold;
+}
+
+@media (hover: hover) {
+  .page-footer-link:hover {
+    font-weight: bold;
+  }
+
 }
 
 .bold {

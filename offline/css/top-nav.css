@@ -20,11 +20,18 @@ button.top-nav {
   text-decoration: none;
 }
 
-a.top-nav:hover,
 a.top-nav:active,
-button.top-nav:hover,
 button.top-nav:active {
   outline: 1px solid black;
+}
+
+@media (hover: hover) {
+
+  a.top-nav:hover,
+  button.top-nav:hover {
+    outline: 1px solid black;
+  }
+
 }
 
 #link-online:link,
@@ -45,9 +52,15 @@ button.top-nav:active {
   padding: 6px 10px;
 }
 
-#link-download:hover,
 #link-download:active {
   outline: 2px solid rgb(192, 0, 0);
+}
+
+@media (hover: hover) {
+  #link-download:hover {
+    outline: 2px solid rgb(192, 0, 0);
+  }
+
 }
 
 /* ##### Top navigation [End] ##### */

@@ -50,14 +50,12 @@ button svg {
   }
 }
 
-@media (hover: none) {
 
-  .btn-submit:active,
-  .btn-reset:active,
-  .btn-save:active {
-    border-width: 2px;
-    background-color: white;
-  }
+.btn-submit:active,
+.btn-reset:active,
+.btn-save:active {
+  border-width: 2px;
+  background-color: white;
 }
 
 /* FORM BUTTONS group [End] */
@@ -92,6 +90,12 @@ button svg {
   margin-bottom: 5px;
 }
 
+.btn.-global:active {
+  border: 2px solid rgba(128, 128, 128, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  --gray-svg: rgba(128, 128, 128, 0.8);
+}
+
 @media (hover: hover) {
 
   .btn.-global:hover {
@@ -100,22 +104,6 @@ button svg {
     --gray-svg: rgba(128, 128, 128, 0.8);
   }
 
-}
-
-@media (hover: none) {
-  .btn.-global:active {
-    border: 2px solid rgba(128, 128, 128, 0.8);
-    background-color: rgba(255, 255, 255, 0.8);
-    --gray-svg: rgba(128, 128, 128, 0.8);
-  }
-
-}
-
-.btn.-global:hover,
-.btn.-global:active {
-  border: 2px solid rgba(128, 128, 128, 0.8);
-  background-color: rgba(255, 255, 255, 0.8);
-  --gray-svg: rgba(128, 128, 128, 0.8);
 }
 
 /* Buttons - Svg */

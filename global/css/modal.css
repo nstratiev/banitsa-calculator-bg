@@ -49,9 +49,14 @@
   font-weight: bold;
 }
 
-.modal .content button:hover,
 .modal .content button:active {
   outline: 1px solid black;
+}
+
+@media (hover: hover) {
+  .modal .content button:hover {
+    outline: 1px solid black;
+  }
 }
 
 .modal .content button.btn-cancel {
@@ -64,7 +69,14 @@
 
 .btn-cancel:focus,
 .btn-confirm:focus {
-  /* box-shadow: 0 0 4px 4px gray; */
+  outline: none;
+  box-shadow: 0 0 4px 4px gray;
 }
+
+
+/* .btn-cancel:focus,
+.btn-confirm:focus {
+  box-shadow: 0 0 4px 4px gray;
+} */
 
 /* ##### Modal [End] ##### */

@@ -32,10 +32,16 @@ body {
   height: 100vh;
 }
 
-:focus {
+/* :focus {
+  outline: none;
+  box-shadow: 0 0 4px 4px gray;
+} */
+
+:focus-visible {
   outline: none;
   box-shadow: 0 0 4px 4px gray;
 }
+
 
 /* ##### Common styles ##### */
 .flex {
@@ -293,8 +299,13 @@ input[type="number"] {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#vinegar-percent:focus,
+/* #vinegar-percent:focus,
 #oil-percent:focus {
+  z-index: 32;
+} */
+
+#vinegar-percent:focus-visible,
+#oil-percent:focus-visible {
   z-index: 32;
 }
 

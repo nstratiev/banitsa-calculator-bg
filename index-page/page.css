@@ -77,9 +77,16 @@ div.cell > h3 {
   text-decoration: none;
 }
 
-.calc-link:hover,
 .calc-link:active {
   text-decoration: underline;
+}
+
+@media (hover: hover) {
+
+  .calc-link:hover {
+    text-decoration: underline;
+  }
+
 }
 
 footer.-page {
@@ -98,9 +105,16 @@ footer.-page {
   pointer-events: none;
 }
 
-.not-active:hover,
 .not-active:active {
   text-decoration: none;
+}
+
+@media (hover: hover) {
+
+  .not-active:hover {
+    text-decoration: none;
+  }
+
 }
 
 /* ##### QUERIES ##### */

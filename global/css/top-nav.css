@@ -35,11 +35,17 @@ button.top-nav {
   text-decoration: none;
 }
 
-a.top-nav:hover,
 a.top-nav:active,
-button.top-nav:hover,
 button.top-nav:active {
   outline: 1px solid black;
+}
+
+@media (hover: hover) {
+
+  a.top-nav:hover,
+  button.top-nav:hover {
+    outline: 1px solid black;
+  }
 }
 
 #link-legend:link,
