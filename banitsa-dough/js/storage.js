@@ -12,10 +12,22 @@ export function setLocalStorage(dataObj, formName) {
   localStorage.setItem(calculatorsCategory, jsonData);
 }
 
-export function getLocalStorage(formName) {
+// export function getLocalStorage(formName) {
+//   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
+
+//   return calculatorData[calculatorName][formName];
+// }
+
+function getFormLocalStorage(formName) {
   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
 
-  return calculatorData[calculatorName][formName];
+  try {
+    const formData = calculatorData[calculatorName][formName];
+    return formData;
+
+  } catch (error) {
+    return null;
+  }
 }
 
 // export function clearLocalStorageGlobal() {
@@ -30,7 +42,7 @@ export function clearAllPageFormsLocalStorageData() {
 
 export function populateLocaleStorageData(formsArr) {
   for (const formElem of formsArr) {
-    const localStorageObj = getLocalStorage(formElem.name);
+    const localStorageObj = getFormLocalStorage(formElem.name);
 
     if (localStorageObj === null) {
       console.info('No localStorage for this form ...');
