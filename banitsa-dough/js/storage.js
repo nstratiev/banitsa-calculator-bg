@@ -2,6 +2,7 @@
 const calculatorName = 'calcBanitsa';
 
 export function setLocalStorage(dataObj, formName) {
+  setInitialLocalStorage();
   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
 
   calculatorData[calculatorName] = {
@@ -11,12 +12,6 @@ export function setLocalStorage(dataObj, formName) {
   const jsonData = JSON.stringify(calculatorData);
   localStorage.setItem(calculatorsCategory, jsonData);
 }
-
-// export function getLocalStorage(formName) {
-//   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
-
-//   return calculatorData[calculatorName][formName];
-// }
 
 function getFormLocalStorage(formName) {
   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
@@ -29,10 +24,6 @@ function getFormLocalStorage(formName) {
     return null;
   }
 }
-
-// export function clearLocalStorageGlobal() {
-//   localStorage.clear();
-// }
 
 export function clearAllPageFormsLocalStorageData() {
   const allCalculatorsData = JSON.parse(localStorage.getItem(calculatorsCategory));
@@ -60,5 +51,5 @@ export function populateLocaleStorageData(formsArr) {
 }
 
 // IMPORTS
-import { calculatorsCategory } from '../../global/js/storage.js';
+import { calculatorsCategory, setInitialLocalStorage } from '../../global/js/storage.js';
 // ##### Storage [End] #####
