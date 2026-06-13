@@ -3,6 +3,7 @@ const calculatorName = 'calcProteins';
 
 export function setLocalStorage(dataObj, formName) {
   setInitialLocalStorage();
+
   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));
 
   calculatorData[calculatorName] = {
