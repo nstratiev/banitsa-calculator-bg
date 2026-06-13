@@ -1,5 +1,5 @@
 // ##### Storage [Start] #####
-const calculatorName = 'calcBanica';
+const calculatorName = 'calcBanitsa';
 
 export function setLocalStorage(dataObj, formName) {
   const calculatorData = JSON.parse(localStorage.getItem(calculatorsCategory));

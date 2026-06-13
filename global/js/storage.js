@@ -1,12 +1,12 @@
-export const calculatorsCategory = 'banicaCalculators';
+export const calculatorsCategory = 'banitsaCalculators';
 
 setInitialLocalStorage();
 
 // Local Storage functions
 function setInitialLocalStorage() {
-  const banicaStorage = localStorage.getItem(calculatorsCategory);
+  const banitsaStorage = localStorage.getItem(calculatorsCategory);
 
-  if (banicaStorage === null) {
+  if (banitsaStorage === null) {
     localStorage.setItem(calculatorsCategory, JSON.stringify({}));
   }
 
