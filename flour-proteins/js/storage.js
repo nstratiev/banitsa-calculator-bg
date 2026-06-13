@@ -42,7 +42,7 @@ export function clearAllPageFormsLocalStorageData() {
 
 export function populateLocaleStorageData(formsArr) {
   for (const formElem of formsArr) {
-    const localStorageObj = getLocalStorage(formElem.name);
+    const localStorageObj = getFormLocalStorage(formElem.name);
 
     if (localStorageObj === null) {
       console.info('No localStorage for this form ...');
