@@ -14,7 +14,7 @@ export function onGlobalReset() {
 
   globalResetConfirmDialog.open()
     .then((msg) => {
-      clearLocalStorageGlobal();
+      clearAllPageFormsLocalStorageData();
       formMain.reset();
       checkmarkAlertGreen(true);
       location.reload();
@@ -56,7 +56,7 @@ export function resetFieldsOutline(formElem) {
 }
 
 
-import { clearLocalStorageGlobal } from './storage.js';
+import { clearAllPageFormsLocalStorageData } from './storage.js';
 import { resultElementsArr_fMain, formMain, } from './elements.js';
 import { checkmarkAlertGreen, globalResetConfirmDialog } from './alerts.js';
 import { inactivateAllFormsAndLinks } from './generic.js';
