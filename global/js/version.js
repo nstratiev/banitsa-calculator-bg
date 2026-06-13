@@ -1,5 +1,6 @@
-export const appVersion = 'Версия: 1.1.8';
+export const appVersion = 'Версия: 1.2.0';
 const appEnvironmentType = '';
+// appEnvironmentType >>> ex. Desktop, Mobile ...
 
 export function printCurrentAppVersion(versionElem) {
   const fragment = new DocumentFragment();
