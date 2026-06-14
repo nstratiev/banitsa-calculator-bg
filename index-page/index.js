@@ -3,7 +3,7 @@
 const versionDivElem = document.querySelector('.version-container > .version');
 
 printCurrentAppVersion(versionDivElem);
-console.log(appVersion);
+console.info(appVersion);
 
 
 // IMPORTS
