@@ -1,4 +1,4 @@
-export const appVersion = 'Версия: 1.1.2';
+export const appVersion = 'Версия: 1.1.4';
 const appEnvironmentType = '';
 // appEnvironmentType >>> ex. Desktop, Mobile ...
 
