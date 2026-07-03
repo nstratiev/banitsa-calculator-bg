@@ -5,9 +5,27 @@ export const versionLegendElem = document.querySelector('#version-legend');
 // -- Forms
 export const formMain = document.querySelector('#form-main');
 
+/*
 // -- Elements - fMain
 export const resultElementsArr_fMain = getFormOutputsArray(formMain);
 export const resultElementsObj_fMain = getFormOutputsObject(formMain);
+*/
+// -- Elements - fMain
+// const out = outputTagElementsArr_fMain.map(el => el.name);
+// console.log(out);
+
+const inputs_fMain = getFormElementsByTag(formMain, 'INPUT');
+const outputs_fMain = getFormElementsByTag(formMain, 'OUTPUT');
+
+export const inputTagElementsArr_fMain = inputs_fMain.arr;
+export const inputTagElementsObj_fMain = inputs_fMain.obj;
+
+export const outputTagElementsArr_fMain = outputs_fMain.arr;
+// const out = outputTagElementsArr_fMain.map(el => el.name);
+// console.log(out);
+
+export const outputTagElementsObj_fMain = outputs_fMain.obj;
+
 
 // Buttons
 export const btnPredefinedValues = document.querySelector('.btn-predefined-values');
@@ -19,6 +37,7 @@ export const btnToTopContainer = btnToTop.parentElement;
 export const btnGlobalReset = document.querySelector('#btn-reset-global ');
 export const btnGlobalSave = document.querySelector('#btn-save-global');
 
+/*
 // -- Functions
 function getFormOutputsArray(formElem) {
   return Array.from(formElem.elements).filter(el => el.tagName === 'OUTPUT');
@@ -33,8 +52,22 @@ function getFormOutputsObject(formElem) {
 
   return obj;
 }
+*/
 
-// Constant objects
+// -- Functions
+function getFormElementsByTag(formElem, targetTagString) {
+  const arr = Array.from(formElem.elements).filter(el => el.tagName === targetTagString.toUpperCase());
+  const obj = {};
+
+  arr.forEach(el => {
+    obj[el.name] = el;
+  });
+
+  return { arr, obj };
+}
+
+
+// Static objects
 export const predefinedData_fMain = {
   "crustsCount": "5",
   "crustWeight": "150",

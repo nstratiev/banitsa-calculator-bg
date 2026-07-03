@@ -4,9 +4,9 @@ setInitialLocalStorage();
 
 // Local Storage functions
 export function setInitialLocalStorage() {
-  const banitsaStorage = localStorage.getItem(calculatorsCategory);
+  const storageItem = localStorage.getItem(calculatorsCategory);
 
-  if (banitsaStorage === null) {
+  if (storageItem === null) {
     localStorage.setItem(calculatorsCategory, JSON.stringify({}));
   }
 

@@ -22,7 +22,7 @@ export function validationOutOfRangeFields(formFieldsArr, pageLoadingObj, resetF
         alertOutOfRangeBox.msgText2 = `[ ${minLimit} - ${maxLimit} ]`;
         alertOutOfRangeBox.open()
           .then((msg) => { })
-          .catch((err) => console.log(err))
+          .catch((err) => console.error(err))
           .finally(() => {
             inactivateAllFormsAndLinks(false, configArr);
             item.focus();
@@ -50,7 +50,7 @@ export function validationEmptyFields(formFieldsArr, pageLoadingObj, resetFormRe
 
         alertEmptyFieldBox.open()
           .then((msg) => { })
-          .catch((err) => console.log(err))
+          .catch((err) => console.error(err))
           .finally(() => {
             inactivateAllFormsAndLinks(false, configArr);
             item.focus();

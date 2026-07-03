@@ -14,6 +14,13 @@ h5.-legend {
   margin-bottom: 8px;
 }
 
+h6.-legend {
+  font-size: 0.9em;
+  text-align: center;
+  /* margin-top: 20px;
+  margin-bottom: 8px; */
+}
+
 .legend-cell-sample {
   border: 1px solid black;
   display: inline-block;

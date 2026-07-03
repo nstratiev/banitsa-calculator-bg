@@ -1,9 +1,14 @@
 // ##### Math [Start] #####
-export function calculate_fMain(data) {
-  const proteinsMinAmount = data.proteinsMinAmount;
-  const proteinsMaxAmount = data.proteinsMaxAmount;
-  const finalFlourWeight = data.finalFlourWeight;
-  const desiredProteinsAmount = data.desiredProteinsAmount;
+export function calculate_fMain(inputDataObj) {
+  // Input fields >>> [ "proteinsMinAmount", "proteinsMaxAmount", "finalFlourWeight", "desiredProteinsAmount" ]
+  // Output fields >>> [ "flourMinProteinsWeight", "flourMaxProteinsWeight", "finalNotes" ]
+
+  const d = Object.fromEntries(Object.entries(inputDataObj).map(el => [el[0], Number(el[1])]));
+
+  const proteinsMinAmount = d.proteinsMinAmount;
+  const proteinsMaxAmount = d.proteinsMaxAmount;
+  const finalFlourWeight = d.finalFlourWeight;
+  const desiredProteinsAmount = d.desiredProteinsAmount;
 
   let flourMinProteinsWeight = getFlourMinProteinsWeight(proteinsMinAmount, proteinsMaxAmount, finalFlourWeight, desiredProteinsAmount);
   let flourMaxProteinsWeight = getFlourMaxProteinsWeight(flourMinProteinsWeight, finalFlourWeight);
@@ -34,9 +39,9 @@ export function calculate_fMain(data) {
     finalNotes = getFinalNotes(flourMinProteinsWeight, flourMaxProteinsWeight, realProteinsAmount);
   }
 
-  return { flourMinProteinsWeight, flourMaxProteinsWeight, finalNotes };
+  const output = { flourMinProteinsWeight, flourMaxProteinsWeight, finalNotes };
+  return output;
 }
-
 
 function getFlourMinProteinsWeight(proteinsMinAmount, proteinsMaxAmount, finalFlourWeight, desiredProteinsAmount) {
   proteinsMinAmount = Number(proteinsMinAmount);

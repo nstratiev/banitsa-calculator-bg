@@ -1,30 +1,24 @@
 // ##### Math [Start] #####
-export function calculate_fMain(data) {
-  const doughWeight = getTotalDoughWeight(data.crustsCount, data.crustWeight);
-  const flourWeight = getTotalFlour(doughWeight, data.hydrationPercent, data.saltPercent);
-  const saltWeight = getTotalIngredientWeight(flourWeight, data.saltPercent);
-  const liquidIngredsWeight = getTotalIngredientWeight(flourWeight, data.hydrationPercent);
-  const vinegarWeight = getTotalIngredientWeight(flourWeight, data.vinegarPercent);
-  const oilWeight = getTotalIngredientWeight(flourWeight, data.oilPercent);
-  const waterWeight = getTotalWaterWeight(liquidIngredsWeight, vinegarWeight, oilWeight);
+export function calculate_fMain(inputDataObj) {
+  // Input fields >>> ["crustsCount", "crustWeight", "hydrationPercent", "saltPercent", "vinegarPercent", "oilPercent"]
+  // Output fields >>> [ "doughWeight", "flourWeight", "saltWeight", "liquidIngredsWeight", "waterWeight", "vinegarWeight", "oilWeight" ]
 
-  return { doughWeight, flourWeight, saltWeight, liquidIngredsWeight, vinegarWeight, oilWeight, waterWeight };
+  const d = Object.fromEntries(Object.entries(inputDataObj).map(el => [el[0], Number(el[1])]));
+
+  const doughWeight = d.crustsCount * d.crustWeight;
+  const flourWeight = doughWeight / (1 + d.hydrationPercent / 100 + d.saltPercent / 100);
+  const saltWeight = flourWeight * (d.saltPercent / 100);
+  const liquidIngredsWeight = flourWeight * (d.hydrationPercent / 100);
+  const vinegarWeight = flourWeight * (d.vinegarPercent / 100);
+  const oilWeight = flourWeight * (d.oilPercent / 100);
+  const waterWeight = liquidIngredsWeight - (vinegarWeight + oilWeight);
+
+  const output = { doughWeight, flourWeight, saltWeight, liquidIngredsWeight, waterWeight, vinegarWeight, oilWeight };
+  return output;
 }
 
-function getTotalDoughWeight(crustsCount, crustWeight) {
-  return Number(crustsCount) * Number(crustWeight);
-}
+// IMPORTS
+// import { outputTagElementsObj_fMain } from './elements.js';
 
-function getTotalFlour(totalDoughWeight, hydrationPercentValue, saltPercent) {
-  return totalDoughWeight / (1 + Number(hydrationPercentValue / 100) + Number(saltPercent / 100));
-}
-
-function getTotalWaterWeight(liquidIngredientsWeight, vinegarWeight, oilWeight) {
-  return liquidIngredientsWeight - (vinegarWeight + oilWeight);
-}
-
-function getTotalIngredientWeight(totalFlour, ingredientPercentValue) {
-  return totalFlour * (Number(ingredientPercentValue) / 100);
-}
 
 // ##### Math [End] #####

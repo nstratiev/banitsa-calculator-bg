@@ -58,6 +58,11 @@ summary:focus {
   margin-bottom: 60px;
 }
 
+.basic-recipe-notes hr {
+  margin-bottom: 40px;
+}
+
+.details-bottom:open > #notes,
 .details-bottom:open > #legend {
   margin-bottom: 0px;
 }
@@ -106,8 +111,42 @@ details hr {
   color: var(--orange-menu-color);
 }
 
+summary#notes {
+  color: purple;
+  margin-bottom: 20px;
+}
+
 .details-body.-bottom {
   margin-bottom: 20px;
+}
+
+details ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding: 2px;
+}
+
+details ul ::marker {
+  /* color: green; */
+  display: block;
+  margin-left: 2px;
+}
+
+details ul li {
+  margin: 4px 4px;
+}
+
+details ol li {
+  margin-bottom: 2px;
+}
+
+details ol li::marker {
+  content: counter(list-item) ") ";
+}
+
+li .inform {
+  color: purple;
+  font-style: italic;
 }
 
 /* ##### Details dropdown [End] ##### */

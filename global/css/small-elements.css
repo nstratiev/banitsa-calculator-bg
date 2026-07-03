@@ -79,7 +79,9 @@
   top: 0;
   left: 0;
   margin: 10px 20px;
-  border: 2px solid rgb(192, 0, 0);
+  /* outline: 2px solid red; */
+  border: 4px solid rgb(192, 0, 0);
+
   border-radius: 6px;
   padding: 10px;
   background-color: lightgoldenrodyellow;
@@ -94,4 +96,47 @@
   z-index: 99;
 }
 
+span.inform {
+  display: block;
+  font-style: italic;
+  font-size: 90%;
+}
+
+.batter-hydration.--container {
+  font-size: 90%;
+  font-style: italic;
+  color: purple;
+  /* font-size: 90%; */
+  border: 1px dashed purple;
+  border-radius: 4px;
+  padding: 6px;
+  margin: 20px 0 40px 0;
+}
+
+.batter-hydration.--label {
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+div.info-entity {
+  display: inline-block;
+  cursor: pointer;
+
+}
+
+span.info-entity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid purple;
+  border-radius: 50%;
+  width: 1.4em;
+  height: 1.4em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: initial;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* ##### Small Elements [End] ##### */
+/* ##### Small Elements [End] ##### >>> Revisited */

@@ -112,6 +112,12 @@ code {
   font-weight: bold;
 }
 
+.predefined-values {
+  text-align: center;
+  color: green;
+  font-style: italic;
+}
+
 /* ##### Main elements ##### */
 body,
 .page-column,

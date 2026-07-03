@@ -55,6 +55,12 @@ button.top-nav:active {
   color: var(--orange-menu-color);
 }
 
+.link-notes:link,
+.link-notes:visited {
+  color: purple;
+  font-size: 1.2em;
+  font-weight: 700;
+}
 
 #link-offline:link,
 #link-offline:visited {

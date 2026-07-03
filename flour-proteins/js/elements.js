@@ -5,9 +5,23 @@ export const versionLegendElem = document.querySelector('#version-legend');
 // -- Forms
 export const formMain = document.querySelector('#form-main');
 
+/*
 // -- Elements - fMain
 export const resultElementsArr_fMain = getFormOutputsArray(formMain);
 export const resultElementsObj_fMain = getFormOutputsObject(formMain);
+*/
+// -- Elements - fMain
+// const out = outputTagElementsArr_fMain.map(el => el.name);
+// console.log(out);
+
+const inputs_fMain = getFormElementsByTag(formMain, 'INPUT');
+const outputs_fMain = getFormElementsByTag(formMain, 'OUTPUT');
+
+export const inputTagElementsArr_fMain = inputs_fMain.arr;
+export const inputTagElementsObj_fMain = inputs_fMain.obj;
+
+export const outputTagElementsArr_fMain = outputs_fMain.arr;
+export const outputTagElementsObj_fMain = outputs_fMain.obj;
 
 // Buttons
 export const btnPredefinedValues = document.querySelector('.btn-predefined-values');
@@ -21,6 +35,7 @@ export const btnGlobalSave = document.querySelector('#btn-save-global');
 
 export const desiredProteinsAmountElem = document.querySelector('#desired-proteins-amount');
 
+/*
 // -- Functions
 function getFormOutputsArray(formElem) {
   return Array.from(formElem.elements).filter(el => el.tagName === 'OUTPUT');
@@ -35,8 +50,20 @@ function getFormOutputsObject(formElem) {
 
   return obj;
 }
+*/
+// -- Functions
+function getFormElementsByTag(formElem, targetTagString) {
+  const arr = Array.from(formElem.elements).filter(el => el.tagName === targetTagString.toUpperCase());
+  const obj = {};
 
-// Constant objects
+  arr.forEach(el => {
+    obj[el.name] = el;
+  });
+
+  return { arr, obj };
+}
+
+// Static objects
 export const predefinedData_fMain = {
   "proteinsMinAmount": "10.6",
   "proteinsMaxAmount": "13.4",

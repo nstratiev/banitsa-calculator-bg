@@ -3,7 +3,6 @@
 document.addEventListener('DOMContentLoaded', (ev) => {
   printCurrentAppVersion(versionHeaderElem);
   printCurrentAppVersion(versionLegendElem);
-  console.log(versionLegendElem);
 
   populateLocaleStorageData([formMain]);
   onSubmit_initialLoad(ev);

@@ -5,10 +5,14 @@ export function getFormDataToObject(formElem) {
 
 export function getData(formElem, pageLoadingObj, resetFormResultsFunc) {
   if (validationEmptyFields(formElem.elements, pageLoadingObj, resetFormResultsFunc) === false) {
+    console.info("Validation for empty input fields >>> Unsuccessful");
+
     return false;
   }
 
   if (validationOutOfRangeFields(formElem.elements, pageLoadingObj, resetFormResultsFunc) === false) {
+    console.info("Validation for out-of-range input fields >>> Unsuccessful");
+
     return false;
   }
 
