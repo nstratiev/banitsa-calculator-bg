@@ -1,9 +1,16 @@
 /* ##### Top navigation [Start] ##### */
 nav.top-nav {
   display: flex;
+  /* gap: 20px; */
   align-items: center;
-  width: 100%;
-  padding: 10px 20px 16px;
+  /* width: 100%; */
+  width: 210px;
+  /* padding: 10px 20px 16px; */
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: 20px;
+  justify-content: space-evenly;
 }
 
 .btn-menu {
@@ -27,7 +34,7 @@ button.top-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   border: 1px solid black;
   border-radius: 6px;
   height: 38px;
@@ -53,6 +60,7 @@ button.top-nav:active {
   font-size: 1.4em;
   font-weight: bold;
   color: var(--orange-menu-color);
+  margin-right: 0;
 }
 
 .link-notes:link,
