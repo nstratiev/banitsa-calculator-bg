@@ -1,4 +1,17 @@
 // ##### Print [Start] #####
+export function clearOutputs_fMain() {
+  outputTagElementsArr_fMain.forEach(el => {
+    el.style.fontWeight = 'normal';
+
+    if (el.name === 'liquidIngredsWeight') {
+      el.value = '...';
+    } else {
+      el.value = '....';
+    }
+
+  });
+}
+
 export function printOutputResults_formMain(resultsData) {
   const data = resultsData;
   const elemObj = outputTagElementsObj_fMain;
@@ -33,7 +46,7 @@ function printResult(value, resultElem, toFixedIndex, additionalTextObj, fontWei
 }
 
 // IMPORTS
-import { outputTagElementsObj_fMain } from './elements.js';
+import { outputTagElementsObj_fMain, outputTagElementsArr_fMain } from './elements.js';
 
 // ##### Print [End] #####
 

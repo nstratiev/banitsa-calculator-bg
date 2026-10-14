@@ -16,6 +16,7 @@ export const resultElementsObj_fMain = getFormOutputsObject(formMain);
 
 const inputs_fMain = getFormElementsByTag(formMain, 'INPUT');
 const outputs_fMain = getFormElementsByTag(formMain, 'OUTPUT');
+// console.log(outputs_fMain);
 
 export const inputTagElementsArr_fMain = inputs_fMain.arr;
 export const inputTagElementsObj_fMain = inputs_fMain.obj;

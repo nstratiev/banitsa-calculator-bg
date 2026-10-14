@@ -6,6 +6,9 @@
 .final-notes {
   color: rgb(192, 0, 0);
   font-size: 85%;
+  min-height: 3.5em;
+  display: flex;
+  align-items: center;
 }
 
 /* ##### Current page [End] ##### */

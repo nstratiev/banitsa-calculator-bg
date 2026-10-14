@@ -4,6 +4,15 @@ export function onSubmit_initialLoad(ev) {
 }
 
 // fMain
+export function attachOnUserFieldInputListener() {
+  inputTagElementsArr_fMain.forEach(el => {
+    if (el.type === 'number') {
+      el.addEventListener('input', clearOutputs_fMain);
+    }
+  });
+
+}
+
 export function populatePredefinedValues_fMain() {
   populatePredefinedValues(formMain, predefinedData_fMain, onReset_fMain);
 }
@@ -79,8 +88,8 @@ function populatePredefinedValues(formElem, predefinedData, resetFormResultsFunc
 }
 
 
-import { printOutputResults_formMain } from './print.js';
-import { formMain, predefinedData_fMain } from './elements.js';
+import { printOutputResults_formMain, clearOutputs_fMain } from './print.js';
+import { formMain, predefinedData_fMain, inputTagElementsArr_fMain } from './elements.js';
 import { getData, getFormDataToObject } from './generic.js';
 import { setLocalStorage } from './storage.js';
 import { onReset_fMain, resetFieldsOutline, resetResults_fMain } from './reset.js';

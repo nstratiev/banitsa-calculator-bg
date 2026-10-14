@@ -21,6 +21,7 @@ btnGlobalReset.addEventListener('click', onGlobalReset);
 btnGlobalSave.addEventListener('click', onGlobalSave);
 
 // Listeners
+attachOnUserFieldInputListener();
 attachFocusoutValidation();
 attachOnFocusoutDecimalPointValidation();
 
@@ -50,7 +51,7 @@ document.addEventListener('click', (ev) => {
 
 
 import { btnGlobalReset, btnGlobalSave, btnPredefinedValues, btnToTop, formMain, versionHeaderElem, versionLegendElem } from './elements.js';
-import { onGlobalSave, onSave_fMain, onSubmit_fMain, onSubmit_initialLoad, populatePredefinedValues_fMain } from './event-handlers.js';
+import { onGlobalSave, onSave_fMain, onSubmit_fMain, onSubmit_initialLoad, populatePredefinedValues_fMain, attachOnUserFieldInputListener } from './event-handlers.js';
 import { attachFocusoutValidation } from './focusout.js';
 import { populateLocaleStorageData } from './storage.js';
 import { onGlobalReset, onReset_fMain } from './reset.js';
